@@ -1,0 +1,118 @@
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+#wrapper{
+    height: 100vh;
+    overflow-x:hidden;
+    overflow-y: auto;
+    perspective: 10px;
+    
+}
+
+.container{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    transform-style: preserve-3d;
+    z-index: -1;
+
+}
+.Background{
+    transform: translateZ(-40px) scale(6);
+}
+.Foreground{
+    transform: translateZ(-20px) scale(4);
+}
+
+.Background, .Foreground{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    z-index:-1;
+}
+h1{
+    position: absolute;
+    top:2rem;
+    font-size:10rem;
+    color: white;
+    text-shadow: 0 0 0 10px rgba(0, 0, 0, 3);
+
+
+}
+section{
+    background-color: rgba(45, 45, 45);
+    /* padding: 0 10rem; */
+    color: white;
+}
+.secHeading{
+    font-size: 5rem;
+
+}
+.text{
+    font: 1.5rem;
+    padding: 0 10rem;
+    margin: 5rem 0;
+}
+.bg{
+    position: relative;
+    width: 100%;
+    height: 500px;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    
+}
+.desc{
+    position:absolute;
+    padding: 0.5rem 0.5rem;
+    background-color: white;
+    color: black;
+   top: 50%;
+   left: 50%;
+   transform: translateX(-300px);
+   font-size: 3.5rem;
+}
+.bg1{
+    background-image: url(BIKING.jpeg);
+}
+.bg2{
+    background-image: url(PARA_GLIDING.jpeg);
+}
+.bg3{
+    background-image: url(SURFING.jpeg);
+/* 
+section{
+    background-color: rgba(45, 45, 45);
+    color: white;
+
+}
+.sedHeading{
+    font-size: 5rem;
+    padding: 0 10rem;
+}
+.text{
+    font: 1.5rem;
+    padding: 0 10rem;
+    margin: 5rem 0;
+}
+.bg{
+    position: relative;
+    width: 100%;
+
+
+}
+.bg1{
+    background-image: url(BIKING.jpeg);
+}
+.bg2{
+    background-image: url(PARA_GLIDING.jpeg);
+}
+.bg3{
+    background-image: url(SURFING.jpeg);
+} */
